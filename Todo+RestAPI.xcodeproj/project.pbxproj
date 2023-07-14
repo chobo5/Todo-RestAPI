@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		205E798C8FB2A11F02B9F8D4 /* Pods_Todo_RestAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B429B08E2FE996085FE8B319 /* Pods_Todo_RestAPI.framework */; };
+		CA699D98296EC6FB00ACFA76 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA699D96296EC6FB00ACFA76 /* TodoTableViewCell.swift */; };
+		CA699D99296EC6FB00ACFA76 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA699D97296EC6FB00ACFA76 /* TodoTableViewCell.xib */; };
+		CA699DA32970472900ACFA76 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA699DA22970472900ACFA76 /* ColorExtension.swift */; };
+		CA6D2EC229BF5F2C0087BA45 /* TodosAPI+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6D2EC129BF5F2C0087BA45 /* TodosAPI+Alamofire.swift */; };
+		CA6D2ED629C76D2C0087BA45 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6D2ED529C76D2C0087BA45 /* Delegate.swift */; };
+		CA6D2ED829C8A63B0087BA45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA6D2ED729C8A63B0087BA45 /* GoogleService-Info.plist */; };
+		CA6D2EDA29C8AA220087BA45 /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6D2ED929C8AA210087BA45 /* FirebaseStorageManager.swift */; };
+		CA9C0773297169D800F9953F /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C0772297169D800F9953F /* ButtonExtension.swift */; };
+		CA9C07752971ABEE00F9953F /* DetailTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C07742971ABEE00F9953F /* DetailTodoViewController.swift */; };
+		CAE7DB04296EC3D2008F4683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7DB03296EC3D2008F4683 /* AppDelegate.swift */; };
+		CAE7DB06296EC3D2008F4683 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7DB05296EC3D2008F4683 /* SceneDelegate.swift */; };
+		CAE7DB08296EC3D2008F4683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7DB07296EC3D2008F4683 /* ViewController.swift */; };
+		CAE7DB0B296EC3D2008F4683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE7DB09296EC3D2008F4683 /* Main.storyboard */; };
+		CAE7DB0D296EC3D3008F4683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE7DB0C296EC3D3008F4683 /* Assets.xcassets */; };
+		CAE7DB10296EC3D3008F4683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE7DB0E296EC3D3008F4683 /* LaunchScreen.storyboard */; };
+		CAFA2E9B297AEAB0000CAA84 /* AddImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2E99297AEAB0000CAA84 /* AddImageTableViewCell.swift */; };
+		CAFA2E9C297AEAB0000CAA84 /* AddImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA2E9A297AEAB0000CAA84 /* AddImageTableViewCell.xib */; };
+		CAFA2E9F297AEAE5000CAA84 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2E9D297AEAE5000CAA84 /* TitleTableViewCell.swift */; };
+		CAFA2EA0297AEAE5000CAA84 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA2E9E297AEAE5000CAA84 /* TitleTableViewCell.xib */; };
+		CAFA2EA3297AEAF6000CAA84 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EA1297AEAF6000CAA84 /* ContentTableViewCell.swift */; };
+		CAFA2EA4297AEAF6000CAA84 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA2EA2297AEAF6000CAA84 /* ContentTableViewCell.xib */; };
+		CAFA2EA7297AEB2C000CAA84 /* PriorityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EA5297AEB2C000CAA84 /* PriorityTableViewCell.swift */; };
+		CAFA2EA8297AEB2C000CAA84 /* PriorityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA2EA6297AEB2C000CAA84 /* PriorityTableViewCell.xib */; };
+		CAFA2EAB297AEB54000CAA84 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EA9297AEB54000CAA84 /* ProgressTableViewCell.swift */; };
+		CAFA2EAC297AEB54000CAA84 /* ProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA2EAA297AEB54000CAA84 /* ProgressTableViewCell.xib */; };
+		CAFA2EAF297BE840000CAA84 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EAE297BE840000CAA84 /* CustomButton.swift */; };
+		CAFA2ED429828698000CAA84 /* TodosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2ED329828698000CAA84 /* TodosAPI.swift */; };
+		CAFA2ED9298287AE000CAA84 /* TodosAPI+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2ED8298287AE000CAA84 /* TodosAPI+Closure.swift */; };
+		CAFA2EDC298287EE000CAA84 /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EDB298287EE000CAA84 /* Todos.swift */; };
+		CAFA2EDF29828871000CAA84 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EDE29828871000CAA84 /* URL+Ext.swift */; };
+		CAFA2EE129828895000CAA84 /* URLRequest+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA2EE029828895000CAA84 /* URLRequest+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43C4FF433E15F173D219EB67 /* Pods-Todo+RestAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo+RestAPI.release.xcconfig"; path = "Target Support Files/Pods-Todo+RestAPI/Pods-Todo+RestAPI.release.xcconfig"; sourceTree = "<group>"; };
+		4646D4EFE8F52B4B9823A55D /* Pods-Todo+RestAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo+RestAPI.debug.xcconfig"; path = "Target Support Files/Pods-Todo+RestAPI/Pods-Todo+RestAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		B429B08E2FE996085FE8B319 /* Pods_Todo_RestAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo_RestAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA699D96296EC6FB00ACFA76 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		CA699D97296EC6FB00ACFA76 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		CA699DA22970472900ACFA76 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		CA6D2EC129BF5F2C0087BA45 /* TodosAPI+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodosAPI+Alamofire.swift"; sourceTree = "<group>"; };
+		CA6D2ED529C76D2C0087BA45 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		CA6D2ED729C8A63B0087BA45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA6D2ED929C8AA210087BA45 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		CA9C0772297169D800F9953F /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		CA9C07742971ABEE00F9953F /* DetailTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTodoViewController.swift; sourceTree = "<group>"; };
+		CAE7DB00296EC3D2008F4683 /* Todo+RestAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo+RestAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE7DB03296EC3D2008F4683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE7DB05296EC3D2008F4683 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CAE7DB07296EC3D2008F4683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAE7DB0A296EC3D2008F4683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE7DB0C296EC3D3008F4683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE7DB0F296EC3D3008F4683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAE7DB11296EC3D3008F4683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFA2E99297AEAB0000CAA84 /* AddImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageTableViewCell.swift; sourceTree = "<group>"; };
+		CAFA2E9A297AEAB0000CAA84 /* AddImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddImageTableViewCell.xib; sourceTree = "<group>"; };
+		CAFA2E9D297AEAE5000CAA84 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		CAFA2E9E297AEAE5000CAA84 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		CAFA2EA1297AEAF6000CAA84 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		CAFA2EA2297AEAF6000CAA84 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
+		CAFA2EA5297AEB2C000CAA84 /* PriorityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityTableViewCell.swift; sourceTree = "<group>"; };
+		CAFA2EA6297AEB2C000CAA84 /* PriorityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriorityTableViewCell.xib; sourceTree = "<group>"; };
+		CAFA2EA9297AEB54000CAA84 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
+		CAFA2EAA297AEB54000CAA84 /* ProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressTableViewCell.xib; sourceTree = "<group>"; };
+		CAFA2EAE297BE840000CAA84 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CAFA2ED329828698000CAA84 /* TodosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosAPI.swift; sourceTree = "<group>"; };
+		CAFA2ED8298287AE000CAA84 /* TodosAPI+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodosAPI+Closure.swift"; sourceTree = "<group>"; };
+		CAFA2EDB298287EE000CAA84 /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
+		CAFA2EDE29828871000CAA84 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		CAFA2EE029828895000CAA84 /* URLRequest+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE7DAFD296EC3D2008F4683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205E798C8FB2A11F02B9F8D4 /* Pods_Todo_RestAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13BD62266F9B8C93CD908D15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B429B08E2FE996085FE8B319 /* Pods_Todo_RestAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		833181CE3048220A5831E8A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4646D4EFE8F52B4B9823A55D /* Pods-Todo+RestAPI.debug.xcconfig */,
+				43C4FF433E15F173D219EB67 /* Pods-Todo+RestAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA699DA62971507F00ACFA76 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA699D96296EC6FB00ACFA76 /* TodoTableViewCell.swift */,
+				CA699D97296EC6FB00ACFA76 /* TodoTableViewCell.xib */,
+				CAFA2E99297AEAB0000CAA84 /* AddImageTableViewCell.swift */,
+				CAFA2E9A297AEAB0000CAA84 /* AddImageTableViewCell.xib */,
+				CAFA2E9D297AEAE5000CAA84 /* TitleTableViewCell.swift */,
+				CAFA2E9E297AEAE5000CAA84 /* TitleTableViewCell.xib */,
+				CAFA2EA1297AEAF6000CAA84 /* ContentTableViewCell.swift */,
+				CAFA2EA2297AEAF6000CAA84 /* ContentTableViewCell.xib */,
+				CAFA2EA5297AEB2C000CAA84 /* PriorityTableViewCell.swift */,
+				CAFA2EA6297AEB2C000CAA84 /* PriorityTableViewCell.xib */,
+				CAFA2EA9297AEB54000CAA84 /* ProgressTableViewCell.swift */,
+				CAFA2EAA297AEB54000CAA84 /* ProgressTableViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		CAE7DAF7296EC3D2008F4683 = {
+			isa = PBXGroup;
+			children = (
+				CAE7DB02296EC3D2008F4683 /* Todo+RestAPI */,
+				CAE7DB01296EC3D2008F4683 /* Products */,
+				833181CE3048220A5831E8A4 /* Pods */,
+				13BD62266F9B8C93CD908D15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE7DB01296EC3D2008F4683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7DB00296EC3D2008F4683 /* Todo+RestAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE7DB02296EC3D2008F4683 /* Todo+RestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7DB03296EC3D2008F4683 /* AppDelegate.swift */,
+				CAE7DB05296EC3D2008F4683 /* SceneDelegate.swift */,
+				CAE7DB07296EC3D2008F4683 /* ViewController.swift */,
+				CAE7DB09296EC3D2008F4683 /* Main.storyboard */,
+				CA9C07742971ABEE00F9953F /* DetailTodoViewController.swift */,
+				CA6D2ED529C76D2C0087BA45 /* Delegate.swift */,
+				CA699DA62971507F00ACFA76 /* CustomCell */,
+				CAFA2EDA298287D4000CAA84 /* Data */,
+				CAFA2EDD2982884C000CAA84 /* Extension */,
+				CAFA2ED229828680000CAA84 /* API */,
+				CAE7DB0C296EC3D3008F4683 /* Assets.xcassets */,
+				CAE7DB0E296EC3D3008F4683 /* LaunchScreen.storyboard */,
+				CAE7DB11296EC3D3008F4683 /* Info.plist */,
+				CA6D2ED729C8A63B0087BA45 /* GoogleService-Info.plist */,
+			);
+			path = "Todo+RestAPI";
+			sourceTree = "<group>";
+		};
+		CAFA2ED229828680000CAA84 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA2ED329828698000CAA84 /* TodosAPI.swift */,
+				CAFA2ED8298287AE000CAA84 /* TodosAPI+Closure.swift */,
+				CA6D2EC129BF5F2C0087BA45 /* TodosAPI+Alamofire.swift */,
+				CA6D2ED929C8AA210087BA45 /* FirebaseStorageManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CAFA2EDA298287D4000CAA84 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA2EDB298287EE000CAA84 /* Todos.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CAFA2EDD2982884C000CAA84 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA2EDE29828871000CAA84 /* URL+Ext.swift */,
+				CAFA2EE029828895000CAA84 /* URLRequest+Ext.swift */,
+				CA699DA22970472900ACFA76 /* ColorExtension.swift */,
+				CA9C0772297169D800F9953F /* ButtonExtension.swift */,
+				CAFA2EAE297BE840000CAA84 /* CustomButton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE7DAFF296EC3D2008F4683 /* Todo+RestAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE7DB14296EC3D3008F4683 /* Build configuration list for PBXNativeTarget "Todo+RestAPI" */;
+			buildPhases = (
+				50215D334260F62973D38EF6 /* [CP] Check Pods Manifest.lock */,
+				CAE7DAFC296EC3D2008F4683 /* Sources */,
+				CAE7DAFD296EC3D2008F4683 /* Frameworks */,
+				CAE7DAFE296EC3D2008F4683 /* Resources */,
+				293F2C61FA4C1E4CF92D8D0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Todo+RestAPI";
+			packageProductDependencies = (
+			);
+			productName = "Todo+RestAPI";
+			productReference = CAE7DB00296EC3D2008F4683 /* Todo+RestAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE7DAF8296EC3D2008F4683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CAE7DAFF296EC3D2008F4683 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = CAE7DAFB296EC3D2008F4683 /* Build configuration list for PBXProject "Todo+RestAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE7DAF7296EC3D2008F4683;
+			packageReferences = (
+			);
+			productRefGroup = CAE7DB01296EC3D2008F4683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE7DAFF296EC3D2008F4683 /* Todo+RestAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE7DAFE296EC3D2008F4683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE7DB10296EC3D3008F4683 /* LaunchScreen.storyboard in Resources */,
+				CAE7DB0D296EC3D3008F4683 /* Assets.xcassets in Resources */,
+				CAE7DB0B296EC3D2008F4683 /* Main.storyboard in Resources */,
+				CA699D99296EC6FB00ACFA76 /* TodoTableViewCell.xib in Resources */,
+				CAFA2EA0297AEAE5000CAA84 /* TitleTableViewCell.xib in Resources */,
+				CAFA2EAC297AEB54000CAA84 /* ProgressTableViewCell.xib in Resources */,
+				CAFA2E9C297AEAB0000CAA84 /* AddImageTableViewCell.xib in Resources */,
+				CA6D2ED829C8A63B0087BA45 /* GoogleService-Info.plist in Resources */,
+				CAFA2EA4297AEAF6000CAA84 /* ContentTableViewCell.xib in Resources */,
+				CAFA2EA8297AEB2C000CAA84 /* PriorityTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		293F2C61FA4C1E4CF92D8D0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo+RestAPI/Pods-Todo+RestAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo+RestAPI/Pods-Todo+RestAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todo+RestAPI/Pods-Todo+RestAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50215D334260F62973D38EF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todo+RestAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE7DAFC296EC3D2008F4683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFA2EDC298287EE000CAA84 /* Todos.swift in Sources */,
+				CAFA2EA7297AEB2C000CAA84 /* PriorityTableViewCell.swift in Sources */,
+				CAE7DB08296EC3D2008F4683 /* ViewController.swift in Sources */,
+				CAFA2EE129828895000CAA84 /* URLRequest+Ext.swift in Sources */,
+				CAFA2EDF29828871000CAA84 /* URL+Ext.swift in Sources */,
+				CAFA2EAB297AEB54000CAA84 /* ProgressTableViewCell.swift in Sources */,
+				CA9C0773297169D800F9953F /* ButtonExtension.swift in Sources */,
+				CAE7DB04296EC3D2008F4683 /* AppDelegate.swift in Sources */,
+				CAFA2E9F297AEAE5000CAA84 /* TitleTableViewCell.swift in Sources */,
+				CA9C07752971ABEE00F9953F /* DetailTodoViewController.swift in Sources */,
+				CAFA2E9B297AEAB0000CAA84 /* AddImageTableViewCell.swift in Sources */,
+				CAE7DB06296EC3D2008F4683 /* SceneDelegate.swift in Sources */,
+				CA699DA32970472900ACFA76 /* ColorExtension.swift in Sources */,
+				CAFA2ED429828698000CAA84 /* TodosAPI.swift in Sources */,
+				CA699D98296EC6FB00ACFA76 /* TodoTableViewCell.swift in Sources */,
+				CAFA2EA3297AEAF6000CAA84 /* ContentTableViewCell.swift in Sources */,
+				CA6D2ED629C76D2C0087BA45 /* Delegate.swift in Sources */,
+				CA6D2EC229BF5F2C0087BA45 /* TodosAPI+Alamofire.swift in Sources */,
+				CAFA2ED9298287AE000CAA84 /* TodosAPI+Closure.swift in Sources */,
+				CA6D2EDA29C8AA220087BA45 /* FirebaseStorageManager.swift in Sources */,
+				CAFA2EAF297BE840000CAA84 /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAE7DB09296EC3D2008F4683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE7DB0A296EC3D2008F4683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE7DB0E296EC3D3008F4683 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE7DB0F296EC3D3008F4683 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE7DB12296EC3D3008F4683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE7DB13296EC3D3008F4683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE7DB15296EC3D3008F4683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4646D4EFE8F52B4B9823A55D /* Pods-Todo+RestAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Todo+RestAPI/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chobo5.Todo-RestAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE7DB16296EC3D3008F4683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C4FF433E15F173D219EB67 /* Pods-Todo+RestAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Todo+RestAPI/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chobo5.Todo-RestAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE7DAFB296EC3D2008F4683 /* Build configuration list for PBXProject "Todo+RestAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE7DB12296EC3D3008F4683 /* Debug */,
+				CAE7DB13296EC3D3008F4683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE7DB14296EC3D3008F4683 /* Build configuration list for PBXNativeTarget "Todo+RestAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE7DB15296EC3D3008F4683 /* Debug */,
+				CAE7DB16296EC3D3008F4683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE7DAF8296EC3D2008F4683 /* Project object */;
+}
