@@ -55,6 +55,21 @@ class ViewController: UIViewController, sendTodoDelegate{
         addButton.clipsToBounds = true
         addButton.setGradiant(color1: UIColor.gradiant1 ?? UIColor.white, color2: UIColor.gradiant2 ?? UIColor.white, color3: UIColor.gradiant4 ?? UIColor.white, color4: UIColor.gradiant4 ?? UIColor.white)
         
+        TodosAPI.fetchTodos { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let todos):
+                todos.forEach { todo in
+                    if todo.progressCount == 2 {
+                        self.completedTodosArray.append(todo)
+                    } else {
+                        self.todosArray.append(todo)
+                    }
+                }
+            case .failure(let error):
+                print("Home", error)
+            }
+        }
      
     }
     
@@ -69,7 +84,8 @@ class ViewController: UIViewController, sendTodoDelegate{
                                      content: todo.content ?? "내용을 입력해주세요.",
                                      imageURl: todo.imageURl ?? "imageURL",
                                      progressCount: todo.progressCount ?? 0,
-                                     colorCount: todo.colorCount ?? 0) { result in
+                                     colorCount: todo.colorCount ?? 0) { [weak self] result in
+                    guard let self = self else { return }
                     switch result {
                     case.success(let success):
                         print("updateEditedTodo",success)
@@ -289,7 +305,8 @@ extension ViewController: UITableViewDelegate {
                 if let id = todosArray[indexPath.row].id {
                     //                    print(id)
                     //완료되지 않은 할일 서버에서 삭제
-                    TodosAPI.deleteATodo(id: id) { result in
+                    TodosAPI.deleteATodo(id: id) { [weak self] result in
+                        guard let self = self else { return }
                         switch result {
                         case .success(let success):
                             if let deletedTodo: Todo? = success {
@@ -309,7 +326,8 @@ extension ViewController: UITableViewDelegate {
             } else if indexPath.section == 1 {
                 if let id = completedTodosArray[indexPath.row].id {
                     //완료된 할일 서버에서 삭제
-                    TodosAPI.deleteATodo(id: id) { result in
+                    TodosAPI.deleteATodo(id: id) { [weak self] result in
+                        guard let self = self else { return }
                         switch result {
                         case .success(let success):
                             if let deletedTodo: Todo? = success {

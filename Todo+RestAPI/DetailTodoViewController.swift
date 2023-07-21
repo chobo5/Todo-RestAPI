@@ -76,7 +76,8 @@ class DetailTodoViewController: UIViewController  {
                               content: contentCell.contentTextView.text ?? "내용을 입력해주세요.",
                               imageURl: todo.imageURl ?? "",
                               progressCount: ProgressCell.progressCount,
-                              colorCount: PriorityCell.priorityCount) { result in
+                              colorCount: PriorityCell.priorityCount) { [weak self] result in
+                guard let self = self else { return }
                 switch result {
                 case.success(let data):
                     
@@ -103,7 +104,6 @@ class DetailTodoViewController: UIViewController  {
                         self.todo.isEdited = false
                         self.todo.image = image
                     }
-//                    self.todo = Todo(content: data.content, id: data.id, imageURl: data.imageURl, modifiedDate: data.modifiedDate, progressCount: data.progressCount, title: data.title, colorCount: data.colorCount, createdDate: data.createdDate, isEdited: false)
                     
                     print("self.todo", self.todo)
                     self.delegate?.sendNewTodo(todo: self.todo)
@@ -126,14 +126,16 @@ class DetailTodoViewController: UIViewController  {
                                  content: contentCell.contentTextView.text ?? "내용을 입력해주세요.",
                                  imageURl: todo.imageURl ?? "",
                                  progressCount: ProgressCell.progressCount,
-                                 colorCount: PriorityCell.priorityCount) { result in
+                                 colorCount: PriorityCell.priorityCount) { [weak self] result in
+                guard let self = self else { return }
                 switch result {
                 case.success(let data):
                     print("updateATodo",data)
                     if let data = data {
                         //MARK: - 할일 가져오기(GET)
                         //update에서 받은 id를 통해 할일을 받아온다
-                        TodosAPI.getATodo(id: data) { result in
+                        TodosAPI.getATodo(id: data) { [weak self] result in
+                            guard let self = self else { return }
                             switch result {
                             case.success(let todo):
                                 print("getATodo",todo)
@@ -213,10 +215,11 @@ extension DetailTodoViewController: UITableViewDataSource {
             //이미지가 없을때
             } else {
                 if todo.imageURl == "" {
-                    
+                    //게시된 이미지 없음
                 } else {
                     FirebaseStorageManager.downloadImage(
-                        urlString: todo.imageURl ?? "") { result in
+                        urlString: todo.imageURl ?? "") { [weak self] result in
+                            guard let self = self else { return }
                             switch result {
                             case .success(let image):
                                 DispatchQueue.main.async {
